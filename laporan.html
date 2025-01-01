@@ -1,27 +1,76 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Laporan Clustering</title>
+    <title>Laporan Hasil Clustering</title>
     <style>
-        body { font-family: Arial, sans-serif; margin: 20px; }
-        h1 { color: #2c3e50; }
-        .cluster { margin-bottom: 20px; }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        h1 {
+            color: #2c3e50;
+        }
+        h2 {
+            color: #34495e;
+        }
+        .cluster {
+            margin-bottom: 20px;
+            background: #ffffff;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .cluster h3 {
+            color: #16a085;
+        }
+        footer {
+            margin-top: 30px;
+            text-align: center;
+            font-size: 0.9em;
+            color: #7f8c8d;
+        }
     </style>
 </head>
 <body>
     <h1>Laporan Hasil Clustering</h1>
-    <p>Data diproses dan dianalisis dengan metode TF-IDF dan algoritma KMeans untuk membuat 3, 4, dan 5 klaster.</p>
-    <h2>Analisis</h2>
-    <div>
-        <h3>Hasil Clustering (3 Klaster)</h3>
-        <p>... Analisis dan kata teratas ...</p>
-        <h3>Hasil Clustering (4 Klaster)</h3>
-        <p>... Analisis dan kata teratas ...</p>
-        <h3>Hasil Clustering (5 Klaster)</h3>
-        <p>... Analisis dan kata teratas ...</p>
+    <p>Berikut adalah hasil analisis clustering pada data komentar grup WhatsApp:</p>
+
+    <div class="cluster">
+        <h3>Hasil Clustering untuk 3 Klaster</h3>
+        <ul>
+            <li><strong>Klaster 1:</strong> eben, radadi, ora</li>
+            <li><strong>Klaster 2:</strong> dihapus, pesan, ini</li>
+            <li><strong>Klaster 3:</strong> disertakan, media, tidak</li>
+        </ul>
     </div>
+
+    <div class="cluster">
+        <h3>Hasil Clustering untuk 4 Klaster</h3>
+        <ul>
+            <li><strong>Klaster 1:</strong> eben, radadi, ora</li>
+            <li><strong>Klaster 2:</strong> dihapus, pesan, ini</li>
+            <li><strong>Klaster 3:</strong> media, disertakan, tidak</li>
+            <li><strong>Klaster 4:</strong> pengumuman, yuliarsih, kick</li>
+        </ul>
+    </div>
+
+    <div class="cluster">
+        <h3>Hasil Clustering untuk 5 Klaster</h3>
+        <ul>
+            <li><strong>Klaster 1:</strong> eben, radadi, yuliarsih</li>
+            <li><strong>Klaster 2:</strong> dihapus, pesan, ini</li>
+            <li><strong>Klaster 3:</strong> alhamdulillah, mas, ya</li>
+            <li><strong>Klaster 4:</strong> pengumuman, yuliarsih, kick</li>
+            <li><strong>Klaster 5:</strong> disertakan, media, tidak</li>
+        </ul>
+    </div>
+
+    <footer>
+        <p>L200220214 Zheika Fushila Aqhila Saptoni</p>
+    </footer>
 </body>
 </html>
