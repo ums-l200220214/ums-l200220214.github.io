@@ -6,85 +6,125 @@
     <title>Laporan Hasil Clustering</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-            background-color: #f4f4f9;
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f4f8;
             color: #333;
         }
         h1 {
-            color: #2c3e50;
             text-align: center;
+            color: #2c3e50;
+            font-size: 2.5em;
+            margin-top: 50px;
         }
         h2 {
             color: #34495e;
+            font-size: 1.8em;
+            margin: 20px 0;
+        }
+        p {
+            text-align: center;
+            font-size: 1.2em;
+            color: #7f8c8d;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 30px;
         }
         .cluster {
-            margin-bottom: 20px;
-            background: #ffffff;
-            padding: 15px;
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 25px;
+            background: linear-gradient(135deg, #8e44ad, #3498db);
+            color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
             cursor: pointer;
-            transition: background-color 0.3s;
+            transition: all 0.3s ease;
         }
         .cluster:hover {
-            background-color: #ecf0f1;
+            box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+            transform: translateY(-5px);
         }
         .cluster h3 {
-            color: #16a085;
             margin: 0;
+            font-size: 1.5em;
+            color: #ecf0f1;
         }
         .cluster ul {
             display: none;
             list-style-type: none;
-            margin-top: 10px;
+            margin-top: 15px;
+            padding-left: 0;
+            font-size: 1.1em;
         }
         .cluster ul li {
-            padding: 5px 0;
+            margin-bottom: 8px;
+            background-color: #fff;
+            color: #2c3e50;
+            border-radius: 4px;
+            padding: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s;
+        }
+        .cluster ul li:hover {
+            background-color: #ecf0f1;
         }
         footer {
-            margin-top: 30px;
+            margin-top: 50px;
             text-align: center;
-            font-size: 0.9em;
+            font-size: 1em;
             color: #7f8c8d;
         }
         .active ul {
             display: block;
+            animation: fadeIn 0.5s ease-out;
+        }
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
         }
     </style>
 </head>
 <body>
     <h1>Laporan Hasil Clustering</h1>
-    <p style="text-align: center;">Berikut adalah hasil analisis clustering pada data komentar grup WhatsApp:</p>
+    <p>Berikut adalah hasil analisis clustering pada data komentar grup WhatsApp:</p>
 
-    <div class="cluster">
-        <h3>Hasil Clustering untuk 3 Klaster</h3>
-        <ul>
-            <li><strong>Klaster 1:</strong> eben, radadi, ora</li>
-            <li><strong>Klaster 2:</strong> dihapus, pesan, ini</li>
-            <li><strong>Klaster 3:</strong> disertakan, media, tidak</li>
-        </ul>
-    </div>
+    <div class="container">
+        <div class="cluster">
+            <h3>Hasil Clustering untuk 3 Klaster</h3>
+            <ul>
+                <li><strong>Klaster 1:</strong> eben, radadi, ora</li>
+                <li><strong>Klaster 2:</strong> dihapus, pesan, ini</li>
+                <li><strong>Klaster 3:</strong> disertakan, media, tidak</li>
+            </ul>
+        </div>
 
-    <div class="cluster">
-        <h3>Hasil Clustering untuk 4 Klaster</h3>
-        <ul>
-            <li><strong>Klaster 1:</strong> eben, radadi, ora</li>
-            <li><strong>Klaster 2:</strong> dihapus, pesan, ini</li>
-            <li><strong>Klaster 3:</strong> media, disertakan, tidak</li>
-            <li><strong>Klaster 4:</strong> pengumuman, yuliarsih, kick</li>
-        </ul>
-    </div>
+        <div class="cluster">
+            <h3>Hasil Clustering untuk 4 Klaster</h3>
+            <ul>
+                <li><strong>Klaster 1:</strong> eben, radadi, ora</li>
+                <li><strong>Klaster 2:</strong> dihapus, pesan, ini</li>
+                <li><strong>Klaster 3:</strong> media, disertakan, tidak</li>
+                <li><strong>Klaster 4:</strong> pengumuman, yuliarsih, kick</li>
+            </ul>
+        </div>
 
-    <div class="cluster">
-        <h3>Hasil Clustering untuk 5 Klaster</h3>
-        <ul>
-            <li><strong>Klaster 1:</strong> eben, radadi, yuliarsih</li>
-            <li><strong>Klaster 2:</strong> dihapus, pesan, ini</li>
-            <li><strong>Klaster 3:</strong> alhamdulillah, mas, ya</li>
-            <li><strong>Klaster 4:</strong> pengumuman, yuliarsih, kick</li>
-            <li><strong>Klaster 5:</strong> disertakan, media, tidak</li>
-        </ul>
+        <div class="cluster">
+            <h3>Hasil Clustering untuk 5 Klaster</h3>
+            <ul>
+                <li><strong>Klaster 1:</strong> eben, radadi, yuliarsih</li>
+                <li><strong>Klaster 2:</strong> dihapus, pesan, ini</li>
+                <li><strong>Klaster 3:</strong> alhamdulillah, mas, ya</li>
+                <li><strong>Klaster 4:</strong> pengumuman, yuliarsih, kick</li>
+                <li><strong>Klaster 5:</strong> disertakan, media, tidak</li>
+            </ul>
+        </div>
     </div>
 
     <footer>
